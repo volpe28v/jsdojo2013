@@ -62,7 +62,11 @@ $(function() {
         $word.addClass("good_5");
       }else if($word.hasClass("good_5")){
         $word.removeClass("good_5");
-        $word.addClass("good_5");
+        $word.addClass("good_6");
+      }else if($word.hasClass("good_6")){
+        $word.removeClass("good_6");
+        $word.addClass("good_7");
+      }else if($word.hasClass("good_7")){
       }
 //      console.log($(this));
     })
@@ -75,7 +79,13 @@ $(function() {
     select_dom.each(function(){
       var id = $(this).attr("id");
       var $word = $("#" + id)
-      if($word.hasClass("good_5")){
+      if($word.hasClass("good_7")){
+        $word.removeClass("good_7");
+        $word.addClass("good_6");
+      }else if($word.hasClass("good_6")){
+        $word.removeClass("good_6");
+        $word.addClass("good_5");
+      }else if($word.hasClass("good_5")){
         $word.removeClass("good_5");
         $word.addClass("good_4");
       }else if($word.hasClass("good_4")){
