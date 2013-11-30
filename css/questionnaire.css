@@ -3,6 +3,9 @@
 	padding: 0;
 }
 
+body {font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
 table {
 	border: 0px none;
 	border-spacing: 1px;
@@ -10,13 +13,22 @@ table {
 
 td {
 	vertical-align: top;
-	padding: 0 2px;
+	padding: 0 2px 2px;
+	width: 50%;
 }
 
 input[type="text"] {
 	font-size: 15px;
 	line-height: 20px;
 	border: solid 1px #999;
+}
+
+form {
+
+}
+
+form h2 {
+
 }
 
 .kpt-table {
@@ -44,6 +56,11 @@ td.kpt-table-p {
 
 td.kpt-table-t {
 	background-color: #E87C00;
+}
+
+.kpt-table div{
+	background-color: #fff;
+	padding: 10px;
 }
 
 #keep ,

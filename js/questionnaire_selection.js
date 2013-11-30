@@ -20,14 +20,15 @@ $(function() {
 
   $('#sel-html').click(function(){
     var selected_text = $.selection('html');
-    //$('#result').text(selected_text);
     var select_dom = $(selected_text);
     select_dom.each(function(){
       var id = $(this).attr("id");
-      $("#" + id).css("font-size",40);
-      console.log($(this));
+      var before_font_size = $(this).css("font-size") + 0;
+      if ( before_font_size == 0){ before_font_size = 20;}
+      $("#" + id).css("font-size",before_font_size + 10);
+//      console.log($(this));
     })
-    console.log(selected_text);
+//    console.log(selected_text);
   });
 });
 

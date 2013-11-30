@@ -4,7 +4,9 @@
 <meta charset="utf-8">
 	<title>jsdojo</title>
 <link rel="stylesheet" href="css/questionnaire.css">
+<link rel="stylesheet" href="css/evaluation.css">
 <script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.selection.js"></script>
 <script src="js/questionnaire.js"></script>
 
 </head>
@@ -31,7 +33,24 @@
 		</table>
 		<input type="submit" value="送信">
 	</form>
+  <button id="good_button">いいね！</button>
+  <button id="bad_button">いくない...</button>
 	<div id="questionnaire_show">
+		<table class="kpt-table">
+			<tr>
+				<td class="kpt-table-k">
+					<h3>KEEP</h3>
+					<div id="keep_show"></div>
+				</td><td rowspan="2" class="kpt-table-t">
+					<h3>TRY</h3>
+					<div id="try_show"></div>
+				</td>
+			</tr><tr>
+				<td class="kpt-table-p">
+					<h3>PROBREM</h3>
+					<div id="problem_show"></div>
+				</td></tr>
+		</table>
 	</div>
 </body>
 </html>
