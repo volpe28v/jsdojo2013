@@ -3,23 +3,25 @@
 <head>
 <meta charset="utf-8">
 	<title>jsdojo</title>
-<link rel="stylesheet" href="css/.css">
+<link rel="stylesheet" href="css/questionnaire.css">
 <script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/app.js"></script>
+<script src="js/questionnaire.js"></script>
 
 </head>
 <body>
 	<h1>JavaScript道場 参加者アンケート</h1>
-	<form>
+	<form id="questionnaire">
 		<h2>お名前</h2>
-		<p><input type="text" name="name"></p>
+		<p><input type="text" name="name" id="name"></p>
 		<h2>Q. よかった所はどこですか？</h2>
-		<p><textarea name="keep"></textarea></p>
+		<p><textarea name="keep" id="keep"></textarea></p>
 		<h2>Q. よかった所はどこですか？</h2>
-		<p><textarea name="problem"></textarea></p>
+		<p><textarea name="problem" id="problem"></textarea></p>
 		<h2>Q. よかった所はどこですか？</h2>
-		<p><textarea name="try"></textarea></p>
+		<p><textarea name="try" id="try"></textarea></p>
 		<input type="submit" value="送信">
 	</form>
+	<div id="questionnaire_show">
+	</div>
 </body>
 </html>
