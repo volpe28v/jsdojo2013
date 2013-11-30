@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border: 0px none;
+	border-spacing: 1px;
+}
+
+td {
+	vertical-align: top;
+	padding: 0 2px;
+}
+
+input[type="text"] {
+	font-size: 15px;
+	line-height: 20px;
+	border: solid 1px #999;
+}
+
+.kpt-table {
+	width: 100%;
+}
+
+.kpt-table textarea {
+	border: none;
+}
+
+.kpt-table h3{
+	font-size: 20px;
+	line-height: 25px;
+	height: 25px;
+	color: #fff;
+}
+
+td.kpt-table-k {
+	background-color: #00FF2F;
+}
+
+td.kpt-table-p {
+	background-color: #0070E8;
+}
+
+td.kpt-table-t {
+	background-color: #E87C00;
+}
+
+#keep ,
+#problem {
+	width: 100%;
+	height: 180px;
+}
+
+#try {
+	width: 100%;
+	height: 380px;
+}

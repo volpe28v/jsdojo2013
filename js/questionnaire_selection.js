@@ -12,11 +12,22 @@ $(function() {
     console.log(problem_text);
     console.log(try_text);
 
-    $("#keep_show").prepend($('<p>').html(keep_text));
-    $("#problem_show").prepend($('<p>').html(problem_text));
-    $("#try_show").prepend($('<p>').html(try_text));
+    $("#questionnaire_show").prepend($('<p>').html(name));
 
     return false;
+  });
+
+
+  $('#sel-html').click(function(){
+    var selected_text = $.selection('html');
+    //$('#result').text(selected_text);
+    var select_dom = $(selected_text);
+    select_dom.each(function(){
+      var id = $(this).attr("id");
+      $("#" + id).css("font-size",40);
+      console.log($(this));
+    })
+    console.log(selected_text);
   });
 });
 
